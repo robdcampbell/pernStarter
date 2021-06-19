@@ -1,0 +1,274 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*  */
+/*  */
+/*  */
+
+button {
+  /* height: fit-content; */
+  cursor: pointer;
+  border: #e6e6e6 solid 1px;
+  border-radius: 2px;
+  padding: 0.5rem;
+}
+
+/* BEGIN */
+.register__form {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.register__form > * {
+  margin-bottom: 0.25rem;
+}
+.register__form > input {
+  cursor: text;
+  background-color: rgba(205, 230, 240, 0.5);
+  border: #e6e6e6 solid 1px;
+  border-radius: 2px;
+  padding: 0.5rem;
+}
+.register__form > input[name="name"] {
+  background: none;
+}
+.register__form > button {
+  cursor: pointer;
+  border: #e6e6e6 solid 1px;
+  background-color: #c5f1b4;
+  border-radius: 2px;
+  padding: 0.5rem;
+}
+
+.dashboard__heading {
+  border-bottom: #c0c0c0 solid 1px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dashboard__heading > h1 {
+}
+
+.dashboard__heading > button {
+  height: fit-content;
+}
+
+/* ///////////////////  */
+
+/* ORIGINAL FRONT END */
+
+/* ///////////////////  */
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBAL */
+
+button {
+  cursor: pointer;
+}
+
+/*  */
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  margin-top: 1rem;
+}
+
+.dashboard {
+  max-width: 500px;
+  margin: 0 auto;
+  border: #c0c0c0 solid 1px;
+  border-radius: 0.25rem;
+}
+
+/* INPUT */
+.add__controls {
+  /* width: 100%; */
+  /* background-color: red; */
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+}
+.add__controls > * {
+}
+.add__controls > input {
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 500px;
+}
+.add__controls > button {
+}
+
+/* LIST */
+
+.todo_list {
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 100%;
+  /* background-color: red; */
+}
+
+.todo_list > h1 {
+  text-align: center;
+  margin: 2rem;
+}
+
+.todo__form {
+  margin-top: 1rem;
+}
+.todo__form > h1 {
+  /* text-align: left; */
+  margin: 1rem;
+}
+
+.todo_table {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  border-collapse: collapse;
+}
+tr {
+  border-bottom: #c0c0c0 solid 1px;
+}
+tr:last-of-type {
+  border: none;
+}
+
+.todo_row > th {
+  padding-bottom: 1rem;
+  text-align: left;
+}
+
+.todo_card > td {
+  padding: 1rem 0;
+  /* text-align: left; */
+}
+.todo_card > td:first-of-type {
+  text-align: left;
+}
+.todo__control {
+  /* background-color: red; */
+}
+.todo__control > button {
+  padding: 0.25rem;
+  margin-left: 0.25rem;
+  border: #888 solid 1px;
+  border-radius: 0.25rem;
+}
+
+/* MODAL */
+/* The Modal (background) */
+.edit__modal {
+  /* display: none; */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  /* Full width */
+  width: 50%;
+  /* Full height */
+  /* height: 100%;  */
+  /* color: white; */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.3); /* Fallback color */
+  border-radius: 0.25rem;
+}
+
+/* Modal Content/Box */
+.modal__content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 2rem 1rem;
+  /* margin: 15% auto; 15% from the top and centered */
+  padding: 2rem;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+.modal__content > input {
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.modal__controls {
+  padding-top: 1rem;
+  justify-content: flex-end;
+  display: flex;
+}
+.confirm__edit {
+  cursor: pointer;
+  margin-left: 1rem;
+  border: #c0c0c0 solid 1px;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+}
+
+/* The Close Button */
+.close__modal {
+  cursor: pointer;
+  position: absolute;
+  top: 7px;
+  right: 10px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

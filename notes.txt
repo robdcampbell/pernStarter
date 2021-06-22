@@ -1,0 +1,10 @@
+https://www.youtube.com/watch?v=5vF0FGfa0RQ&t=8s
+
+heroku login 
+heroku create pern-deploy-todo-rc
+heroku addons:create heroku-postgresql:hobby-dev -a pern-deploy-todo-rc
+heroku pg:psql -a pern-deploy-todo-rc (if you want to enter heroku PSQL)
+git heroku push main
+
+"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend
+

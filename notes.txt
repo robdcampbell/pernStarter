@@ -8,3 +8,7 @@ git heroku push main
 
 "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend
 
+
+
++ pay attention !!!
+- backend/utils/jwtGenerator.js uses a .env variable!

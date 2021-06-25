@@ -75,9 +75,11 @@ router.post("/login", validInfo, async (req, res) => {
     // 4. Give user the JWT token
     const token = jwtGenerator(user.rows[0].user_id);
 
+    console.log(token);
+
     res.status(200).json({ token });
   } catch (error) {
-    console.error(`${error.message}`);
+    console.error(`PTERO ${error.message}`);
 
     res.status(500).json("Server error...");
   }

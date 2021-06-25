@@ -18,6 +18,7 @@ const Login = ({ setAuth }) => {
     e.preventDefault();
 
     const body = { email, password };
+    console.log(email, password);
 
     try {
       const response = await fetch("http://localhost:5000/auth/login", {

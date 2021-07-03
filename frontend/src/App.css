@@ -50,6 +50,16 @@ button {
 }
 
 /* BEGIN */
+
+.registration {
+  background-color: #f4f4f4;
+  border: #c0c0c0 solid 1px;
+  border-radius: 1rem;
+  margin: 0 auto;
+  padding: 1rem;
+  width: 50%;
+}
+
 .register__form {
   width: 50%;
   margin: 0 auto;

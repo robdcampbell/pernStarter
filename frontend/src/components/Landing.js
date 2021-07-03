@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 
 const Landing = () => {
   return (
-    <>
-      <h1>Welcome!</h1>
-      <p>Sign in and start buildng your list:</p>
+    <section className="registration">
+      <h1>Stater Pack.</h1>
+      <p>Sign in to get to your dashboard:</p>
       <Link to="/login">Login</Link>
       <Link to="/register">Register</Link>
-    </>
+    </section>
   );
 };
 

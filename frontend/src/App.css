@@ -56,12 +56,18 @@ button {
   border: #c0c0c0 solid 1px;
   border-radius: 1rem;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1.5rem;
   width: 50%;
 }
 
+.registration > h1 {
+  color: #282c34;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
 .register__form {
-  width: 50%;
+  /* width: 75%; */
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -76,15 +82,32 @@ button {
   border-radius: 2px;
   padding: 0.5rem;
 }
+.register__form > input:hover {
+  border: #bbbbbb solid 1px;
+}
 .register__form > input[name="name"] {
   background: none;
 }
 .register__form > button {
   cursor: pointer;
   border: #e6e6e6 solid 1px;
-  background-color: #c5f1b4;
+  /* background-color: #c5f1b4; */
+  background-color: rgb(219, 219, 219);
   border-radius: 2px;
   padding: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.register__form > button:hover {
+  border: #bbbbbb solid 1px;
+}
+
+.register__form > a {
+  text-decoration: none;
+  color: #282c34;
+}
+.register__form > a:hover {
+  color: #bebebe;
 }
 
 .dashboard__heading {

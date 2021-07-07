@@ -39,7 +39,7 @@ const Dashboard = ({ setAuth }) => {
   return (
     <div className="dashboard">
       <header className="dashboard__heading">
-        <h1>Welcome {name}!</h1>
+        <h1>Welcome {name}.</h1>
         <button onClick={(e) => logout(e)}>logout</button>
       </header>
 

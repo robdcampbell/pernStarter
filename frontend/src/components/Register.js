@@ -44,13 +44,13 @@ const Register = ({ setAuth }) => {
 
   return (
     <section className="registration">
-      <h1>Register</h1>
+      <h1>Create Account</h1>
       <form className="register__form" onSubmit={(e) => onSubmitForm(e)}>
         <input
           required
           type="email"
           name="email"
-          placeholder="email"
+          placeholder="Email Address"
           value={email}
           onChange={(e) => changeInput(e)}
         />
@@ -58,13 +58,13 @@ const Register = ({ setAuth }) => {
           required
           type="password"
           name="password"
-          placeholder="password"
+          placeholder="Password"
           onChange={(e) => changeInput(e)}
         />
         <input
           type="text"
           name="name"
-          placeholder="name"
+          placeholder="Name"
           onChange={(e) => changeInput(e)}
         />
         <button>Submit</button>

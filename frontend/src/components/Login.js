@@ -51,7 +51,7 @@ const Login = ({ setAuth }) => {
           required
           type="email"
           name="email"
-          placeholder="email"
+          placeholder="Email Address"
           value={email}
           onChange={(e) => changeInput(e)}
         />
@@ -59,12 +59,12 @@ const Login = ({ setAuth }) => {
           required
           type="password"
           name="password"
-          placeholder="password"
+          placeholder="Password"
           onChange={(e) => changeInput(e)}
         />
         <button>Log In</button>
         <p>Need an account?</p>
-        <Link to="/register">Register here</Link>
+        <Link to="/register">Create one here</Link>
       </form>
     </section>
   );

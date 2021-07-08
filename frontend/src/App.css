@@ -210,6 +210,10 @@ tr:last-of-type {
 
 .todo_row > th {
   padding-bottom: 1rem;
+  text-align: center;
+}
+.todo_row > th:first-of-type {
+  padding-bottom: 1rem;
   text-align: left;
 }
 
@@ -222,10 +226,21 @@ tr:last-of-type {
 }
 .todo__control {
   /* background-color: red; */
+  /* margin-right: 0.25rem; */
 }
 .todo__control > button {
-  padding: 0.25rem;
+  padding: 0.5rem;
+  width: 90%;
   margin-left: 0.25rem;
+  background: none;
+  border: #888 solid 1px;
+  border-radius: 0.25rem;
+}
+.todo__control > button:hover {
+  padding: 0.5rem;
+  width: 90%;
+  margin-left: 0.25rem;
+  background: #f4f4f4;
   border: #888 solid 1px;
   border-radius: 0.25rem;
 }
@@ -282,6 +297,10 @@ tr:last-of-type {
   border: #c0c0c0 solid 1px;
   border-radius: 0.25rem;
   padding: 0.25rem;
+}
+
+.confirm__edit:hover {
+  background-color: #f4f4f4;
 }
 
 /* The Close Button */

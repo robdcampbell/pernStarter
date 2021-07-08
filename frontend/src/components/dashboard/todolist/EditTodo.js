@@ -26,7 +26,8 @@ const EditTodo = ({ showModal, setShowModal, todo, trip, setTrip }) => {
   return (
     <div className="edit__modal">
       <div className="modal__content">
-        <h1>Edit Todo {todo.todo_id}</h1>
+        {/* <h1>Edit Todo {todo.todo_id}</h1> */}
+        {/* <h4>Edit:</h4> */}
         <input
           type="text"
           placeholder={description}
@@ -50,7 +51,7 @@ const EditTodo = ({ showModal, setShowModal, todo, trip, setTrip }) => {
               className="confirm__edit"
               onClick={(e) => setShowModal(false)}
             >
-              Close
+              Cancel
             </span>
           </p>
         </div>

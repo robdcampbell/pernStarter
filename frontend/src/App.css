@@ -23,7 +23,7 @@
 }
 
 .wrap-all {
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 }
 
 /*  */
@@ -45,6 +45,7 @@ button {
   /* border: #c0c0c0 solid 1px; */
   border-radius: 1rem;
   margin: 0 auto;
+  margin-top: 2rem;
   padding: 1.5rem;
   width: 50%;
 }
@@ -126,7 +127,7 @@ button {
 }
 
 .dashboard {
-  max-width: 500px;
+  /* max-width: 500px; */
   margin: 0 auto;
   /* border: #c0c0c0 solid 1px; */
   border-radius: 0.25rem;
@@ -135,13 +136,15 @@ button {
 
 .dashboard__heading {
   border-bottom: #c0c0c0 solid 1px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgb(219, 219, 219);
   margin-bottom: 1rem;
   padding: 1rem;
   padding-bottom: 1rem;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 .dashboard__heading > h1 {
 }
@@ -227,7 +230,8 @@ tr:last-of-type {
   border-radius: 0.25rem;
 }
 
-/* MODAL */
+/* EDIT MODAL */
+
 /* The Modal (background) */
 .edit__modal {
   /* display: none; */
@@ -245,8 +249,9 @@ tr:last-of-type {
   /* height: 100%;  */
   /* color: white; */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgba(0, 0, 0, 0.3); /* Fallback color */
-  border-radius: 0.25rem;
+  /* background-color: rgba(0, 0, 0, 0.3); Fallback color */
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  border-radius: 0.5rem;
 }
 
 /* Modal Content/Box */
@@ -257,6 +262,7 @@ tr:last-of-type {
   /* margin: 15% auto; 15% from the top and centered */
   padding: 2rem;
   border: 1px solid #888;
+  border-radius: 0.5rem;
   width: 80%; /* Could be more or less, depending on screen size */
 }
 .modal__content > input {

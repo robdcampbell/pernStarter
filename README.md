@@ -15,3 +15,8 @@
 
 - `heroku addons:create heroku-postgresql:hobby-dev -a example-project-name`
 - `heroku pg:psql -a example-project-name`
+
+## DEV ENVIRONMENT:
+
+Backend (node, express) - in root, run: npm run dev
+Frontend (react) - cd frontend, run: run start

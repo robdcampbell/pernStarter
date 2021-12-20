@@ -12,3 +12,16 @@ git heroku push main
 
 + pay attention !!!
 - backend/utils/jwtGenerator.js uses a .env variable!
+
+
+
+
+
+#### STEPS FORWARD: 
+    - Notes on Postgres Extensions (UUID Generator, etc...)
+    - ORM (probably sequelize)
+        - Automatically create tables
+    - Updated Dashboard (edit user profile)
+    - Password reset (NodeMailer, setting initial question in the beginning?)
+    - Connection string, etc... using .env vars 
+

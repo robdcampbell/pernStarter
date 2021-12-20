@@ -40,6 +40,17 @@ button {
 
 /* BEGIN */
 
+.landing-controls {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.landing-controls * {
+  margin-top: 0.5rem;
+  text-decoration: none;
+}
+
 .registration {
   background-color: #f4f4f4;
   /* border: #c0c0c0 solid 1px; */

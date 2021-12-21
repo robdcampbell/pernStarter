@@ -142,14 +142,29 @@ button {
   margin: 0 auto;
   /* border: #c0c0c0 solid 1px; */
   border-radius: 0.25rem;
+  background-color: rgb(214, 214, 214);
+
+  height: 100vh;
   width: 100%;
+}
+.dashboard__body {
+  padding: 1rem 0;
+  margin: 0.25rem;
+  background-color: rgb(250, 250, 250);
+  border-radius: 0.5rem;
+  max-width: 500px;
 }
 
 .dashboard__heading {
-  border-bottom: #c0c0c0 solid 1px;
-  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom: rgba(0, 0, 0, 0.5) 5px solid;
+  background: linear-gradient(
+    100deg,
+    rgb(184, 84, 84),
+    rgb(128, 0, 128),
+    rgb(51, 51, 141)
+  );
   color: rgb(219, 219, 219);
-  margin-bottom: 1rem;
+  margin-bottom: 0.25rem;
   padding: 1rem;
   padding-bottom: 1rem;
   display: flex;
@@ -158,10 +173,18 @@ button {
   width: 100%;
 }
 .dashboard__heading > h1 {
+  color: white;
+  font-weight: 100;
+  font-size: 3rem;
+}
+
+.dashboard__user {
 }
 
 .dashboard__heading > button {
   height: fit-content;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
 }
 
 /* INPUT */
@@ -171,7 +194,7 @@ button {
   margin: 0 auto;
   padding: 0 1rem;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   /* flex-direction: column; */
 }
 .add__controls > * {
@@ -180,8 +203,11 @@ button {
   padding: 0.5rem;
   width: 100%;
   max-width: 500px;
+  border: #bbbbbb solid 1px;
 }
 .add__controls > button {
+  margin-left: 0.25rem;
+  border: #bbbbbb solid 1px;
 }
 
 /* LIST */
@@ -203,6 +229,9 @@ button {
 }
 .todo__form > h1 {
   /* text-align: left; */
+  /* background-color: red; */
+  color: #535353;
+  width: fit-content;
   margin: 1rem;
 }
 

@@ -39,12 +39,15 @@ const Dashboard = ({ setAuth }) => {
   return (
     <div className="dashboard">
       <header className="dashboard__heading">
-        <h1>Welcome {name}.</h1>
+        <h1>
+          Welcome, <span className="dashboard__user">{name}</span>.
+        </h1>
         <button onClick={(e) => logout(e)}>logout</button>
       </header>
-
-      <InputTodo trip={trip} setTrip={setTrip} />
-      <ListTodos parsedData={parsedData} trip={trip} setTrip={setTrip} />
+      <div className="dashboard__body">
+        <InputTodo trip={trip} setTrip={setTrip} />
+        <ListTodos parsedData={parsedData} trip={trip} setTrip={setTrip} />
+      </div>
     </div>
   );
 };

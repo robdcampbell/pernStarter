@@ -41,7 +41,6 @@ router.post("/register", validInfo, async (req, res) => {
 
     res.status(200).json({ token });
   } catch (error) {
-    console.error(error.message);
     res.status(500).send("Server error...");
   }
 });
@@ -79,9 +78,9 @@ router.post("/login", validInfo, async (req, res) => {
 
     res.status(200).json({ token });
   } catch (error) {
-    console.error(`PTERO ${error.message}`);
+    console.error(`${error.message}`);
 
-    res.status(500).json("Server error...");
+    // res.status(500).json("Server error...");
   }
 });
 

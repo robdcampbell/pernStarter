@@ -19,12 +19,15 @@ git heroku push main
 
 
 #### STEPS FORWARD: 
-    - # Notes on Postgres Extensions (UUID Generator, etc...)
-    - #  ORM (probably sequelize)
+    - 1) # Notes on Postgres Extensions (UUID Generator, etc...)
+    - 2) #  ORM (probably sequelize)
         - Automatically create tables
-    - #  REDUX
-    - # - Updated Dashboard (edit user profile)
+    - 3) #  REDUX
+    - 4) # - Updated Dashboard (edit user profile)
+        - Change UI of registration/login
         - Edit UserName, update Pass, etc... 
-    - # - Password reset (NodeMailer, setting initial question in the beginning?)
-    - # - Connection string, etc... using .env vars 
-
+    - 5) # - Password reset (NodeMailer, setting initial 
+        question in the beginning?)
+    - 6) # - Connection string, etc... using .env vars 
+    - 7) # Fix modal at small sizes, refactor styles to be mobile first
+    - 8) Confirmation on Edit/Deletion of things
